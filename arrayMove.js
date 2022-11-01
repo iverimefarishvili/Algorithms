@@ -12,7 +12,7 @@ function determineMove(arr1, arr2) {
         l2 = checkLength(arr2[i]);
 
         for(let j=0; j< l1.length; j++ ) {
-            count += l1[j] - l2[j] < 0 ? (l1[j] - l2[j])*-1 : l1[j] - l2[j];
+            count += Math.abs(l1[j] - l2[j]);
         }
     }
     return count;
