@@ -18,6 +18,10 @@ var spiralOrder = function(matrix) {
         }
         right--;
         
+        if(!(left <= right && top <= bottom)) {
+            break;
+        }
+        
         for(let i =right; i>=left; i--) {
             answerList.push(matrix[bottom][i]);
         }
