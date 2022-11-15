@@ -14,6 +14,6 @@ var multiply = function(num1, num2) {
             nums[p1] += Math.floor(sum/10);
         }
     }
-
+    
     return nums.join('').replace(/^0+/, '');
 };
